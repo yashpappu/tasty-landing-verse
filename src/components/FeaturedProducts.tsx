@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -15,35 +14,35 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: "Avocado Bowl",
-    description: "Fresh avocado, quinoa, cherry tomatoes, and herbs with our signature dressing.",
-    price: "$14.95",
-    imageUrl: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
-    tags: ["Vegan", "Protein"]
+    name: "Butter Chicken",
+    description: "Tender chicken in a rich, creamy tomato sauce with aromatic spices and fresh cream.",
+    price: "$16.95",
+    imageUrl: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80",
+    tags: ["Signature", "Spicy"]
   },
   {
     id: 2,
-    name: "Mediterranean Plate",
-    description: "Hummus, falafel, tabbouleh, and warm pita bread with olive oil.",
-    price: "$16.95",
-    imageUrl: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80",
-    tags: ["Vegetarian", "Sharing"]
+    name: "Vegetable Biryani",
+    description: "Fragrant basmati rice cooked with seasonal vegetables, saffron, and traditional Indian spices.",
+    price: "$14.95",
+    imageUrl: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80",
+    tags: ["Vegetarian", "Aromatic"]
   },
   {
     id: 3,
-    name: "Wild Salmon",
-    description: "Grilled salmon fillet with seasonal vegetables and lemon herb sauce.",
-    price: "$22.95",
-    imageUrl: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80",
-    tags: ["Seafood", "Protein"]
+    name: "Palak Paneer",
+    description: "Fresh spinach puree with homemade cottage cheese cubes, garlic, and authentic spices.",
+    price: "$15.95",
+    imageUrl: "https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=600&q=80",
+    tags: ["Vegetarian", "Protein"]
   },
   {
     id: 4,
-    name: "Autumn Harvest",
-    description: "Roasted seasonal vegetables with ancient grains and herb dressing.",
-    price: "$18.95",
-    imageUrl: "https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?auto=format&fit=crop&w=600&q=80",
-    tags: ["Vegetarian", "Seasonal"]
+    name: "Masala Dosa",
+    description: "Crispy rice and lentil crepe filled with spiced potato, served with coconut chutney and sambar.",
+    price: "$13.95",
+    imageUrl: "https://images.unsplash.com/photo-1610192244261-3f33de3f55e4?auto=format&fit=crop&w=600&q=80",
+    tags: ["South Indian", "Breakfast"]
   }
 ];
 
@@ -88,10 +87,10 @@ const FeaturedProducts = () => {
           OUR MENU
         </div>
         <h2 className={`text-3xl md:text-4xl lg:text-5xl font-serif font-medium mb-4 ${visibleElements.includes(1) ? 'animate-fade-in' : 'opacity-0'}`}>
-          Featured <span className="text-primary">Dishes</span>
+          Authentic <span className="text-primary">Indian</span> Cuisine
         </h2>
         <p className={`text-muted-foreground ${visibleElements.includes(1) ? 'animate-fade-in' : 'opacity-0'}`}>
-          Our seasonal menu showcases the finest ingredients at their peak flavor, crafted with care and attention to detail.
+          Experience the rich flavors and aromatic spices of traditional Indian dishes, prepared with care using time-honored recipes.
         </p>
       </div>
       
