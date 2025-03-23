@@ -49,7 +49,8 @@ const Gallery = () => {
       (entries) => {
         if (entries[0].isIntersecting) {
           const timer = setTimeout(() => {
-            setVisibleElements([0, 1, 2, ...Array(galleryImages.length).keys().map(i => i + 3)]);
+            // Fix: Convert Array.keys() to a proper array before mapping
+            setVisibleElements([0, 1, 2, ...Array.from({ length: galleryImages.length }).map((_, i) => i + 3)]);
           }, 100);
           
           return () => clearTimeout(timer);
